@@ -23,4 +23,17 @@ class Solution:
                 sub = s[head:tail+1]
         if maxLen < len(sub): maxLen = len(sub)
         return maxLen
-                
+        # if not s:
+        #     return 0
+        
+        # char_index_map = {}
+        # max_len = 0
+        # start = 0
+        
+        # for end, char in enumerate(s):
+        #     if char in char_index_map and char_index_map[char] >= start:
+        #         start = char_index_map[char] + 1
+        #     char_index_map[char] = end
+        #     max_len = max(max_len, end - start + 1)
+        
+        # return max_len
